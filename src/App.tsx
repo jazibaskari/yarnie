@@ -1,5 +1,5 @@
 import GridEditor from './components/GridEditor'
-import { samplePalette } from './data/samplePalette'
+import { lionBrandPalette } from './data/lionBrandPalette'
 import './App.css'
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
         <p>Colorwork chart POC — paint the grid and it renders as real knit/purl stitches.</p>
       </header>
       <main>
-        <GridEditor colors={samplePalette} />
+        <GridEditor colors={lionBrandPalette} />
       </main>
     </div>
   )

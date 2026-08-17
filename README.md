@@ -28,11 +28,14 @@ Then open the printed local URL in your browser.
 - `src/components/ColorPalette.tsx` — yarn color swatch picker
 - `src/components/GridEditor.tsx` — combines the grid, palette, and controls
 - `src/hooks/useChartState.ts` — grid state and paint/resize logic
-- `src/data/samplePalette.ts` — placeholder yarn color data for the POC
+- `src/data/lionBrandPalette.ts` — Lion Brand (Vanna's Choice) colorway data
 
 ## Notes on data
 
-`samplePalette.ts` is placeholder data for this POC only — generic color
-names and hex values, not sourced from any yarn brand's catalog or product
-photography. Real catalog sourcing (brand API/affiliate feed vs. user
-uploads) is a decision for a future iteration.
+`lionBrandPalette.ts` uses real Lion Brand colorway names, and each swatch
+links directly to Lion Brand's own product photo on their CDN — the image
+files themselves are never downloaded or committed into this repo, only
+referenced by URL. The `hex` value isn't an official brand value; it's the
+dominant color sampled from each linked photo, used to drive the stitch
+renderer. Broader catalog coverage (more colorways/lines, or an official
+data source) is a decision for a future iteration.
