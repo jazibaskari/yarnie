@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #faf8f4;
+  color: #2b2620;
+}
+
+button {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #cfc7b6;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #2b2620;
+  color: #fff;
+  cursor: default;
+}
